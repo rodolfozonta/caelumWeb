@@ -15,7 +15,7 @@
 <%=desenvolvido %>
 <br/>
 <a href="lista-contatos-scriptlet.jsp">Lista de Contatos</a> <br/>
-<a href="adiciona-contato.html">Adiciona Contatos</a> <br/>
+<a href="adiciona-contato.jsp">Adiciona Contatos</a> <br/>
 <a href="digita-idade.jsp">Digita Idade</a> <br/>
 <a href="lista-contatos.jsp">Lista Contatos Param</a> <br/>
 <%System.out.println("Tudo foi executado!"); %>
