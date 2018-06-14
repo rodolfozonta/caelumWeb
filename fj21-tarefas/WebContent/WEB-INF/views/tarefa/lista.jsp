@@ -6,9 +6,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+
 <title>Insert title here</title>
 </head>
 <body>
+<script type="text/javascript">
+	function finalizaAgora(id){
+		$.post("finalizaTarefa", {'id' : id}, function(){
+			//selecionando o elemento html atraves da
+			//ID e alterando o HTML dele
+			$("#tarefa_"+id).html("Finalizado");
+		});
+	}
+	</script>
+	
 	<a href="novaTarefa">Criar nova tarefa</a>
 	<br />
 	<br />
@@ -24,7 +37,11 @@
 				<td>${tarefa.id}</td>
 				<td>${tarefa.descricao}</td>
 				<c:if test="${tarefa.finalizado eq false}">
-					<td>Não Finalizado</td>
+					<td id="tarefa_${tarefa.id}">  
+						<a href="#" onClick="finalizaAgora(${tarefa.id})">
+							Finaliza Agora!
+						 </a>
+					 </td>
 				</c:if>
 				<c:if test="${tarefa.finalizado eq true}">
 					<td>Finalizado</td>
