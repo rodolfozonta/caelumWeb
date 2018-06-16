@@ -4,7 +4,7 @@
 	version="2.0">
 
 	<persistence-unit name="tarefas">
-
+ 
 		<class>br.com.caelum.tarefas.modelo.Tarefa</class>
 
 		<properties>

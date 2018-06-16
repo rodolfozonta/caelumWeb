@@ -9,7 +9,7 @@ import javax.persistence.Query;
 
 import br.com.caelum.tarefas.modelo.Tarefa;
 
-public class BuscaTarefas {
+public class BuscaTarefas {  
 	public static void main(String[] args) {
 		
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("tarefas");

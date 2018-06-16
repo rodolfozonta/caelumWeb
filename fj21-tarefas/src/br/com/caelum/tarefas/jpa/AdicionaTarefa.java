@@ -10,7 +10,7 @@ import br.com.caelum.tarefas.modelo.Tarefa;
 
 public class AdicionaTarefa {
 	public static void main(String[] args) {
-		Tarefa tarefa = new Tarefa();
+		Tarefa tarefa = new Tarefa(); 
 		tarefa.setDescricao("Estudar JPA e Hibernate LIXOO");
 		tarefa.setFinalizado(false);
 		tarefa.setDataFinalizacao(Calendar.getInstance());
