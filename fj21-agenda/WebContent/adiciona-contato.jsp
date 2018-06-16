@@ -23,7 +23,7 @@
 		E-mail: <input type="text" name="email" /> <br /> 
 		Endereço: <input type="text" name="endereco" /> <br />
 		Data Nascimento: <caelum:campoData id="dataNascimento" /> <br /> 
-			<input type="submit" value="Gravar" /> <br>e
+			<input type="submit" value="Gravar" /> <br>
 	<a href="bemvindo.jsp">Voltar</a>
 	</form>
 <c:import url="rodape.jsp"/>	
